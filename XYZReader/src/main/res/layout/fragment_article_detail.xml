@@ -71,9 +71,14 @@
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <FrameLayout
+        <com.example.xyzreader.ui.MaxWidthLinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:maxWidth="@dimen/detail_card_max_width"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/article_body"
@@ -86,10 +91,9 @@
                 android:textColor="@color/textColorPrimary"
                 android:textColorLink="@color/colorAccent"
                 android:textSize="@dimen/detail_body_text_size" />
+        </com.example.xyzreader.ui.MaxWidthLinearLayout>
 
-        </FrameLayout>
     </android.support.v4.widget.NestedScrollView>
-
 
     <ImageButton
         android:id="@+id/share_fab"
