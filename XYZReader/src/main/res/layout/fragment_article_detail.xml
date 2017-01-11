@@ -6,10 +6,10 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:elevation="4dp"
-        app:elevation="4dp"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="4dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -99,16 +99,12 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        app:backgroundTint="@color/colorAccent"
+        android:layout_margin="@dimen/fab_margin"
         android:contentDescription="@string/action_share"
         android:src="@drawable/ic_share"
-        app:elevation="6dp"
-        app:pressedTranslationZ="12dp"
-        app:rippleColor="@color/colorAccentDark" />
+        app:fabSize="normal" />
 
 </android.support.design.widget.CoordinatorLayout>
