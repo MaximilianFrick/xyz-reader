@@ -6,6 +6,8 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
+        android:elevation="4dp"
+        app:elevation="4dp"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -95,17 +97,18 @@
 
     </android.support.v4.widget.NestedScrollView>
 
-    <ImageButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
-        android:background="@drawable/add_fab_background"
+        app:backgroundTint="@color/colorAccent"
         android:contentDescription="@string/action_share"
-        android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
-        android:stateListAnimator="@anim/fab_state_list_anim" />
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/colorAccentDark" />
 
 </android.support.design.widget.CoordinatorLayout>

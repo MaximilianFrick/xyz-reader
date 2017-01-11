@@ -20,14 +20,12 @@
 
     <color name="colorPrimary">#424242</color>
     <color name="colorPrimaryDark">#212121</color>
-    <color name="colorAccent">#DD2C00</color>
+    <color name="colorAccent">#FF3D00</color>
+    <color name="colorAccentDark">#BF360C</color>
 
     <color name="textColorPrimary">#D9000000</color>
     <color name="textColorSecondary">#8C000000</color>
     <color name="textColorPrimaryLight">#FFFFFF</color>
     <color name="textColorSecondaryLight">#B3FFFFFF</color>
 
-    <color name="theme_primary_dark">#04561A</color>
-    <color name="theme_accent">#04561A</color>
-    <color name="ltgray">#ffe0e0e0</color>
 </resources>
